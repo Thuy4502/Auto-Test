@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+	<parameter name="browserType" value="edge" />
+	<parameter name="appURL" value="https://anhtester.startkatalyst.com/account/sign-in" />
+
+	<test name="sample test">
+		<classes>
+			<class name="selenium.com.testcases.BuyNowTest">
+				<methods>
+					<include name="buy2Pay1Test" />
+					<include name="buy2Pay1LessThan2Test" />
+					<include name="noPromotionTest" />
+				</methods>
+			</class>
+			<class name="selenium.com.testcases.NonLoyalLoginTest">
+				<methods>
+					<include name="nonLoyalBuy2Pay1Test" />
+					<include name="nonLoyalNoPromotionTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

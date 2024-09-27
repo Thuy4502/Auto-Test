@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CEG(failed)">
+    <classes>
+      <class name="selenium.com.testcases.LoginTestV1">
+        <methods>
+          <include name="wrongPasswordTest"/>
+          <include name="closeBrowser"/>
+          <include name="createBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- selenium.com.testcases.LoginTestV1 -->
+    </classes>
+  </test> <!-- CEG(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
